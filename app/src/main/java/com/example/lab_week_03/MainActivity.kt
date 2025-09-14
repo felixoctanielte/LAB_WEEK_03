@@ -26,9 +26,9 @@ class MainActivity : AppCompatActivity(), CoffeeListener {
     }
 
     override fun onSelected(id: Int) {
-        val detailFragment = supportFragmentManager
+        val detailsFragment = supportFragmentManager
             .findFragmentById(R.id.fragment_detail) as DetailsFragment
-        detailFragment.setCoffeeData(id)
-    }
 
+        detailsFragment.setCoffeeData(id)
+    }
 }
